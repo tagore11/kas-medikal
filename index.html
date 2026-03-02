@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="tr" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaş Medikal Ortopedi — Ortopedik Sarf Malzemeleri | 7/24 Hizmet</title>
+    <meta name="description" content="Kaş ve çevresinde ortopedik medikal sarf malzemeleri. Diz desteği, bel korsesi, boyunluk, bandaj, ortopedik tabanlık. 24 saat açık. Kapıya teslimat.">
+    <meta name="keywords" content="Kaş medikal, ortopedik malzeme Kaş, bel korsesi Kaş, diz desteği Antalya, medikal sarf Kaş, ortopedi Kaş, orthopedic supplies Kaş, ортопедические товары Каш">
+    <meta property="og:title" content="Kaş Medikal Ortopedi — Ortopedik Sarf Malzemeleri">
+    <meta property="og:description" content="Kaş'ın güvenilir ortopedik medikal sarf mağazası. 7/24 açık. WhatsApp ile sipariş verin, kapınıza getirelim.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0C6E5F;
+            --primary-light: #0E8A76;
+            --primary-dark: #094D43;
+            --accent: #25D366;
+            --accent-hover: #1EBE57;
+            --bg: #FAFBFC;
+            --card: #FFFFFF;
+            --text: #1A2332;
+            --text-light: #5A6B7F;
+            --border: #E8ECF0;
+            --shadow: 0 2px 12px rgba(0,0,0,0.06);
+            --shadow-lg: 0 8px 32px rgba(0,0,0,0.1);
+            --gold: #F59E0B;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* LANGUAGE SWITCHER */
+        .lang-switcher {
+            position: fixed;
+            top: 72px;
+            right: 24px;
+            z-index: 999;
+            display: flex;
+            gap: 4px;
+            background: white;
+            border-radius: 10px;
+            padding: 4px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+        .lang-btn {
+            padding: 6px 12px;
+            border: none;
+            background: transparent;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        .lang-btn:hover:not(.active) { background: rgba(12,110,95,0.06); }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+            transition: box-shadow 0.3s;
+        }
+        nav.scrolled { box-shadow: var(--shadow); }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        .logo {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-cta {
+            background: var(--accent) !important;
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 600 !important;
+            transition: background 0.2s !important;
+        }
+        .nav-cta:hover { background: var(--accent-hover) !important; }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+        .hamburger span {
+            width: 24px;
+            height: 2.5px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 140px 24px 80px;
+            background: linear-gradient(135deg, #f0faf8 0%, #e8f4f1 50%, #f5f9f8 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(12,110,95,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(12,110,95,0.08);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .hero-badge .pulse {
+            width: 8px; height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        .hero h1 span { color: var(--primary); }
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+        .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-whatsapp {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+        }
+        .btn-whatsapp:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+        }
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--border);
+        }
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            background: rgba(12,110,95,0.04);
+        }
+        .hero-visual { display: flex; justify-content: center; align-items: center; }
+        .hero-card {
+            background: white;
+            border-radius: 24px;
+            padding: 36px;
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            max-width: 400px;
+        }
+        .hero-card-icon {
+            width: 64px; height: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .hero-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
+        .hero-card p { color: var(--text-light); font-size: 0.9rem; }
+        .hero-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+        .stat-num { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+        .stat-label { font-size: 0.8rem; color: var(--text-light); }
+
+        /* SECTIONS */
+        .section-label {
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.1rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 48px;
+            font-size: 1rem;
+        }
+
+        /* FEATURES */
+        .features { padding: 80px 24px; max-width: 1200px; margin: 0 auto; }
+        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .feature-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .feature-icon {
+            width: 48px; height: 48px;
+            background: rgba(12,110,95,0.08);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+        .feature-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+        .feature-card p { color: var(--text-light); font-size: 0.85rem; }
+
+        /* PRODUCTS */
+        .products { padding: 80px 24px; background: white; }
+        .products-inner { max-width: 1200px; margin: 0 auto; }
+        .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .product-card {
+            background: var(--bg);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        .product-img {
+            height: 180px;
+            background: linear-gradient(135deg, #e8f4f1, #d4ede7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+        }
+        .product-info { padding: 20px; }
+        .product-info h3 { font-size: 1.05rem; margin-bottom: 4px; }
+        .product-info p { color: var(--text-light); font-size: 0.82rem; margin-bottom: 12px; }
+        .product-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        /* REVIEWS */
+        .reviews { padding: 80px 24px; background: var(--bg); }
+        .reviews-inner { max-width: 1200px; margin: 0 auto; }
+        .reviews-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+        .google-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            margin: 0 auto 48px;
+        }
+        .google-badge img { height: 24px; }
+        .google-badge .rating-num { font-size: 1.3rem; font-weight: 800; color: var(--text); }
+        .google-badge .stars { color: var(--gold); font-size: 1.1rem; }
+        .google-badge .review-count { color: var(--text-light); font-size: 0.85rem; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .review-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        .review-card:hover { box-shadow: var(--shadow-lg); }
+        .review-top {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+        .review-avatar {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+        }
+        .review-name { font-weight: 600; font-size: 0.95rem; }
+        .review-date { font-size: 0.75rem; color: var(--text-light); }
+        .review-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 10px; }
+        .review-text { color: var(--text-light); font-size: 0.88rem; line-height: 1.6; }
+        .review-flag { font-size: 1rem; margin-left: auto; }
+
+        /* DELIVERY */
+        .delivery-banner {
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary), var(--primary-light));
+            color: white;
+            text-align: center;
+        }
+        .delivery-banner h2 { font-size: 1.9rem; margin-bottom: 12px; }
+        .delivery-banner p {
+            font-size: 1.05rem; opacity: 0.9;
+            margin-bottom: 28px; max-width: 600px;
+            margin-left: auto; margin-right: auto;
+        }
+        .delivery-areas { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+        .area-tag {
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .btn-whatsapp-light {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .btn-whatsapp-light:hover { background: #f0f0f0; transform: translateY(-2px); }
+
+        /* CONTACT */
+        .contact { padding: 80px 24px; background: white; }
+        .contact-inner { max-width: 1200px; margin: 0 auto; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+        .contact-info { display: flex; flex-direction: column; gap: 20px; }
+        .contact-item { display: flex; gap: 14px; align-items: flex-start; }
+        .contact-icon {
+            width: 48px; height: 48px;
+            background: rgba(12,110,95,0.08);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+        .contact-item h4 { font-size: 0.92rem; margin-bottom: 2px; }
+        .contact-item p { color: var(--text-light); font-size: 0.88rem; }
+        .contact-item a { color: var(--primary); text-decoration: none; font-weight: 500; }
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+        .map-container iframe { width: 100%; height: 350px; border: none; }
+
+        /* FOOTER */
+        footer {
+            background: var(--text);
+            color: rgba(255,255,255,0.7);
+            padding: 40px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        footer a { color: rgba(255,255,255,0.9); text-decoration: none; }
+
+        /* WHATSAPP FLOAT */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+            background: var(--accent);
+            color: white;
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            text-decoration: none;
+            transition: all 0.3s;
+            animation: float-pulse 3s ease-in-out infinite;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        @keyframes float-pulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+            50% { box-shadow: 0 4px 30px rgba(37,211,102,0.6); }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-links.active {
+                display: flex; flex-direction: column;
+                position: absolute; top: 64px; left: 0; right: 0;
+                background: white; padding: 24px;
+                border-bottom: 1px solid var(--border);
+                box-shadow: var(--shadow);
+            }
+            .hamburger { display: flex; }
+            .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+            .hero h1 { font-size: 2rem; }
+            .hero-visual { order: -1; }
+            .hero-card { max-width: 100%; }
+            .features-grid, .products-grid, .reviews-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .hero-actions { flex-direction: column; }
+            .btn { justify-content: center; }
+            .lang-switcher { top: 70px; right: 12px; }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .features-grid, .products-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- LANGUAGE SWITCHER -->
+<div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('tr')">🇹🇷 TR</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 EN</button>
+    <button class="lang-btn" onclick="setLang('ru')">🇷🇺 RU</button>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="#" class="logo">
+            <div class="logo-icon">✚</div>
+            Kaş Medikal Ortopedi
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#urunler" data-tr="Ürünler" data-en="Products" data-ru="Товары">Ürünler</a>
+            <a href="#hizmetler" data-tr="Hizmetler" data-en="Services" data-ru="Услуги">Hizmetler</a>
+            <a href="#yorumlar" data-tr="Yorumlar" data-en="Reviews" data-ru="Отзывы">Yorumlar</a>
+            <a href="#iletisim" data-tr="İletişim" data-en="Contact" data-ru="Контакты">İletişim</a>
+            <a href="https://wa.me/905066452259?text=Merhaba%2C%20bilgi%20almak%20istiyorum." class="nav-cta" target="_blank">💬 WhatsApp</a>
+        </div>
+        <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div>
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                <span data-tr="7/24 Açık" data-en="Open 24/7" data-ru="Открыто 24/7">7/24 Açık</span>
+            </div>
+            <h1>
+                <span data-tr="Kaş'ın Güvenilir" data-en="Kaş's Trusted" data-ru="Надёжный магазин">Kaş'ın Güvenilir</span><br>
+                <span class="primary-text" style="color:var(--primary)" data-tr="Ortopedik Medikal" data-en="Orthopedic Medical" data-ru="Ортопедических">Ortopedik Medikal</span><br>
+                <span data-tr="Mağazası" data-en="Supply Store" data-ru="Товаров в Каше">Mağazası</span>
+            </h1>
+            <p data-tr="Ortopedik sarf malzemeleri, destekler, korseler ve tüm medikal araç gereçler. WhatsApp ile sipariş verin, kapınıza getirelim." data-en="Orthopedic supplies, braces, supports and all medical equipment. Order via WhatsApp and we deliver to your door." data-ru="Ортопедические товары, бандажи, корсеты и всё медицинское оборудование. Закажите через WhatsApp — доставим к вашей двери.">Ortopedik sarf malzemeleri, destekler, korseler ve tüm medikal araç gereçler. WhatsApp ile sipariş verin, kapınıza getirelim.</p>
+            <div class="hero-actions">
+                <a href="https://wa.me/905066452259?text=Merhaba%2C%20sipariş%20vermek%20istiyorum." class="btn btn-whatsapp" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.613l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.826-6.336-2.207l-.442-.353-3.238 1.085 1.085-3.238-.353-.442A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                    <span data-tr="WhatsApp ile Sipariş Ver" data-en="Order via WhatsApp" data-ru="Заказать через WhatsApp">WhatsApp ile Sipariş Ver</span>
+                </a>
+                <a href="tel:+905066452259" class="btn btn-secondary">
+                    📞 <span data-tr="Hemen Ara" data-en="Call Now" data-ru="Позвонить">Hemen Ara</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="hero-card-icon">🏥</div>
+                <h3 data-tr="Profesyonel Ortopedik Çözümler" data-en="Professional Orthopedic Solutions" data-ru="Профессиональные ортопедические решения">Profesyonel Ortopedik Çözümler</h3>
+                <p data-tr="Her türlü ortopedik sarf malzemesi ve medikal araç gereç ihtiyacınız için yanınızdayız." data-en="We're here for all your orthopedic supply and medical equipment needs." data-ru="Мы рядом для всех ваших потребностей в ортопедических товарах и медицинском оборудовании.">Her türlü ortopedik sarf malzemesi ve medikal araç gereç ihtiyacınız için yanınızdayız.</p>
+                <div class="hero-stats">
+                    <div><div class="stat-num">7/24</div><div class="stat-label" data-tr="Kesintisiz Hizmet" data-en="Non-stop Service" data-ru="Круглосуточно">Kesintisiz Hizmet</div></div>
+                    <div><div class="stat-num">Kaş</div><div class="stat-label" data-tr="& Çevre İlçeler" data-en="& Surrounding Areas" data-ru="и окрестности">& Çevre İlçeler</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="hizmetler">
+    <div class="section-label" data-tr="Neden Biz?" data-en="Why Us?" data-ru="Почему мы?">Neden Biz?</div>
+    <h2 class="section-title" data-tr="Güvenilir Medikal Hizmet" data-en="Reliable Medical Service" data-ru="Надёжный медицинский сервис">Güvenilir Medikal Hizmet</h2>
+    <p class="section-subtitle" data-tr="Kaş ve çevresinde ortopedik medikal sarf malzemelerinde tek adresiniz." data-en="Your one-stop shop for orthopedic medical supplies in the Kaş area." data-ru="Ваш единственный адрес для ортопедических медицинских товаров в районе Каша.">Kaş ve çevresinde ortopedik medikal sarf malzemelerinde tek adresiniz.</p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🕐</div>
+            <h3 data-tr="7/24 Açık" data-en="Open 24/7" data-ru="Открыто 24/7">7/24 Açık</h3>
+            <p data-tr="Gece gündüz fark etmez. Acil ortopedik malzeme ihtiyacınızda her zaman ulaşılabilir durumdayız." data-en="Day or night, we're always available for your urgent orthopedic supply needs." data-ru="Днём и ночью мы всегда доступны для ваших срочных ортопедических потребностей.">Gece gündüz fark etmez. Acil ortopedik malzeme ihtiyacınızda her zaman ulaşılabilir durumdayız.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🚗</div>
+            <h3 data-tr="Kapıya Teslimat" data-en="Door Delivery" data-ru="Доставка на дом">Kapıya Teslimat</h3>
+            <p data-tr="Kaş merkez ve çevre bölgelere hızlı teslimat. WhatsApp'tan sipariş verin, biz getirelim." data-en="Fast delivery to Kaş center and surrounding areas. Order on WhatsApp, we'll bring it." data-ru="Быстрая доставка в центр Каша и окрестности. Закажите через WhatsApp — мы привезём.">Kaş merkez ve çevre bölgelere hızlı teslimat. WhatsApp'tan sipariş verin, biz getirelim.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3 data-tr="WhatsApp Sipariş" data-en="WhatsApp Order" data-ru="Заказ через WhatsApp">WhatsApp Sipariş</h3>
+            <p data-tr="Tek mesajla sipariş verin. Ürün fotoğrafı gönderin, size en uygun çözümü önerelim." data-en="Order with a single message. Send a product photo, we'll suggest the best solution." data-ru="Закажите одним сообщением. Отправьте фото — мы предложим лучшее решение.">Tek mesajla sipariş verin. Ürün fotoğrafı gönderin, size en uygun çözümü önerelim.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🏨</div>
+            <h3 data-tr="Otel & Pansiyon Servisi" data-en="Hotel & Pension Service" data-ru="Сервис для отелей">Otel & Pansiyon Servisi</h3>
+            <p data-tr="Tatilciler için acil medikal malzeme tedariği. Otelinize kadar getiriyoruz." data-en="Emergency medical supply delivery for tourists. We deliver right to your hotel." data-ru="Экстренная доставка медицинских товаров для туристов прямо в отель.">Tatilciler için acil medikal malzeme tedariği. Otelinize kadar getiriyoruz.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤿</div>
+            <h3 data-tr="Outdoor Spor Desteği" data-en="Outdoor Sports Support" data-ru="Поддержка для спорта">Outdoor Spor Desteği</h3>
+            <p data-tr="Dalış, trekking, paragliding sonrası sakatlanmalara anında müdahale malzemeleri." data-en="Immediate supplies for injuries from diving, trekking, and paragliding." data-ru="Немедленные товары при травмах от дайвинга, треккинга и параглайдинга.">Dalış, trekking, paragliding sonrası sakatlanmalara anında müdahale malzemeleri.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3 data-tr="Çok Dilli Hizmet" data-en="Multilingual Service" data-ru="Многоязычный сервис">Çok Dilli Hizmet</h3>
+            <p data-tr="Uluslararası ziyaretçilere Türkçe, İngilizce ve Rusça hizmet veriyoruz." data-en="We serve international visitors in Turkish, English and Russian." data-ru="Мы обслуживаем международных посетителей на турецком, английском и русском языках.">Uluslararası ziyaretçilere Türkçe, İngilizce ve Rusça hizmet veriyoruz.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="urunler">
+    <div class="products-inner">
+        <div class="section-label" data-tr="Ürün Kategorileri" data-en="Product Categories" data-ru="Категории товаров">Ürün Kategorileri</div>
+        <h2 class="section-title" data-tr="Ortopedik Medikal Sarf Malzemeleri" data-en="Orthopedic Medical Supplies" data-ru="Ортопедические медицинские товары">Ortopedik Medikal Sarf Malzemeleri</h2>
+        <p class="section-subtitle" data-tr="İhtiyacınız olan ürünü seçin, WhatsApp'tan bize yazın." data-en="Choose the product you need and message us on WhatsApp." data-ru="Выберите нужный товар и напишите нам в WhatsApp.">İhtiyacınız olan ürünü seçin, WhatsApp'tan bize yazın.</p>
+        <div class="products-grid">
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20diz%20deste%C4%9Fi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🦵</div>
+                <div class="product-info">
+                    <h3 data-tr="Diz Destekleri & Dizlikler" data-en="Knee Braces & Supports" data-ru="Наколенники и бандажи">Diz Destekleri & Dizlikler</h3>
+                    <p data-tr="Neopren dizlik, menisküs desteği, ligament stabilizatörleri, spor dizlikleri" data-en="Neoprene knee brace, meniscus support, ligament stabilizers, sports knee pads" data-ru="Неопреновый наколенник, поддержка мениска, стабилизаторы связок, спортивные наколенники">Neopren dizlik, menisküs desteği, ligament stabilizatörleri, spor dizlikleri</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20bel%20korsesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🔄</div>
+                <div class="product-info">
+                    <h3 data-tr="Bel Korseleri" data-en="Back Braces & Lumbar Supports" data-ru="Поясничные корсеты">Bel Korseleri</h3>
+                    <p data-tr="Lomber korse, dorsolumbar korse, bel bantları, sırt destekleri" data-en="Lumbar corset, dorsolumbar brace, back belts, spinal supports" data-ru="Поясничный корсет, дорсолюмбальный бандаж, спинные пояса">Lomber korse, dorsolumbar korse, bel bantları, sırt destekleri</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20boyunluk%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🧣</div>
+                <div class="product-info">
+                    <h3 data-tr="Boyunluklar" data-en="Cervical Collars" data-ru="Шейные воротники">Boyunluklar</h3>
+                    <p data-tr="Yumuşak boyunluk, sert servikal yaka, Philadelphia boyunluk" data-en="Soft collar, rigid cervical collar, Philadelphia collar" data-ru="Мягкий воротник, жёсткий шейный воротник, Филадельфийский воротник">Yumuşak boyunluk, sert servikal yaka, Philadelphia boyunluk</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20bandaj%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🩹</div>
+                <div class="product-info">
+                    <h3 data-tr="Bandaj & Sargılar" data-en="Bandages & Wraps" data-ru="Бинты и повязки">Bandaj & Sargılar</h3>
+                    <p data-tr="Elastik bandaj, kohezif bandaj, alçı alternatifleri, flaster" data-en="Elastic bandage, cohesive wrap, cast alternatives, adhesive tape" data-ru="Эластичный бинт, когезивная повязка, альтернативы гипсу, пластырь">Elastik bandaj, kohezif bandaj, alçı alternatifleri, flaster</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20ortopedik%20tabanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">👟</div>
+                <div class="product-info">
+                    <h3 data-tr="Ortopedik Tabanlıklar" data-en="Orthopedic Insoles" data-ru="Ортопедические стельки">Ortopedik Tabanlıklar</h3>
+                    <p data-tr="Silikon tabanlık, ark desteği, topuk yastığı, diyabetik tabanlık" data-en="Silicone insoles, arch support, heel cushion, diabetic insoles" data-ru="Силиконовые стельки, поддержка свода, подпяточник, диабетические стельки">Silikon tabanlık, ark desteği, topuk yastığı, diyabetik tabanlık</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20koltuk%20de%C4%9Fne%C4%9Fi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🦯</div>
+                <div class="product-info">
+                    <h3 data-tr="Yürüme Yardımcıları" data-en="Walking Aids" data-ru="Ходьба и мобильность">Yürüme Yardımcıları</h3>
+                    <p data-tr="Koltuk değneği, walker, baston, tekerlekli sandalye" data-en="Crutches, walker, cane, wheelchair" data-ru="Костыли, ходунки, трость, инвалидная коляска">Koltuk değneği, walker, baston, tekerlekli sandalye</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20el%20bilek%20deste%C4%9Fi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🤚</div>
+                <div class="product-info">
+                    <h3 data-tr="El & Bilek Destekleri" data-en="Hand & Wrist Supports" data-ru="Кистевые бандажи">El & Bilek Destekleri</h3>
+                    <p data-tr="Bilek splinti, parmak ateli, karpal tünel desteği" data-en="Wrist splint, finger splint, carpal tunnel brace" data-ru="Лучезапястная шина, пальцевая шина, бандаж для запястья">Bilek splinti, parmak ateli, karpal tünel desteği</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20ayak%20bilegi%20deste%C4%9Fi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🦶</div>
+                <div class="product-info">
+                    <h3 data-tr="Ayak Bileği Destekleri" data-en="Ankle Supports" data-ru="Голеностопные бандажи">Ayak Bileği Destekleri</h3>
+                    <p data-tr="Ayak bileği bandajı, stabilizatör, burkulma desteği" data-en="Ankle bandage, stabilizer, sprain support" data-ru="Бандаж на голеностоп, стабилизатор, поддержка при растяжении">Ayak bileği bandajı, stabilizatör, burkulma desteği</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.open('https://wa.me/905066452259?text=Merhaba%2C%20medikal%20malzeme%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.','_blank')">
+                <div class="product-img">🏥</div>
+                <div class="product-info">
+                    <h3 data-tr="Diğer Medikal Malzemeler" data-en="Other Medical Supplies" data-ru="Другие медтовары">Diğer Medikal Malzemeler</h3>
+                    <p data-tr="Tansiyon aleti, ateş ölçer, solunum cihazları, hasta bakım ürünleri" data-en="Blood pressure monitor, thermometer, respiratory devices, patient care" data-ru="Тонометр, термометр, дыхательные аппараты, товары для ухода">Tansiyon aleti, ateş ölçer, solunum cihazları, hasta bakım ürünleri</p>
+                    <span class="product-cta" data-tr="WhatsApp'tan Sor →" data-en="Ask on WhatsApp →" data-ru="Спросить в WhatsApp →">WhatsApp'tan Sor →</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="yorumlar">
+    <div class="reviews-inner">
+        <div class="section-label" data-tr="Müşteri Yorumları" data-en="Customer Reviews" data-ru="Отзывы клиентов">Müşteri Yorumları</div>
+        <h2 class="section-title" data-tr="Müşterilerimiz Ne Diyor?" data-en="What Our Customers Say" data-ru="Что говорят наши клиенты?">Müşterilerimiz Ne Diyor?</h2>
+        <div style="text-align:center">
+            <div class="google-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                <span class="rating-num">4.9</span>
+                <span class="stars">★★★★★</span>
+                <span class="review-count" data-tr="Google Yorumları" data-en="Google Reviews" data-ru="Отзывы Google">Google Yorumları</span>
+            </div>
+        </div>
+        <div class="reviews-grid">
+            <!-- Review 1 - Turkish -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar" style="background:#3B82F6">AY</div>
+                    <div>
+                        <div class="review-name">Ahmet Yılmaz</div>
+                        <div class="review-date" data-tr="2 ay önce" data-en="2 months ago" data-ru="2 месяца назад">2 ay önce</div>
+                    </div>
+                    <span class="review-flag">🇹🇷</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-tr="Dalış yaparken ayak bileğimi burktum. Gece 11'de aradım, 15 dakikada otele geldi. Tam ihtiyacım olan ayak bileği bandajını ve soğuk kompresi getirdi. Kaş'ta böyle bir hizmet olması çok güzel." data-en="I sprained my ankle while diving. Called at 11 PM and they arrived at my hotel in 15 minutes with exactly the ankle bandage and cold compress I needed. Amazing to have this service in Kaş." data-ru="Подвернул лодыжку во время дайвинга. Позвонил в 23:00 — приехали в отель через 15 минут с бандажом и холодным компрессом. Отличный сервис в Каше.">Dalış yaparken ayak bileğimi burktum. Gece 11'de aradım, 15 dakikada otele geldi. Tam ihtiyacım olan ayak bileği bandajını ve soğuk kompresi getirdi. Kaş'ta böyle bir hizmet olması çok güzel.</p>
+            </div>
+            <!-- Review 2 - Russian -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar" style="background:#EF4444">ОП</div>
+                    <div>
+                        <div class="review-name">Olga Petrova</div>
+                        <div class="review-date" data-tr="3 ay önce" data-en="3 months ago" data-ru="3 месяца назад">3 ay önce</div>
+                    </div>
+                    <span class="review-flag">🇷🇺</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-tr="Tatilde dizim ağrımaya başladı, otelden yürüyerek ulaşılabilir mesafede. Çok yardımcı oldular, doğru dizliği seçmeme yardım ettiler. Fiyatlar da makul. Teşekkürler!" data-en="My knee started hurting during vacation, and the shop is walking distance from the hotels. Very helpful staff, they helped me choose the right knee brace. Prices are fair too. Thank you!" data-ru="Во время отпуска начало болеть колено, магазин в пешей доступности от отелей. Очень помогли подобрать правильный наколенник. Цены адекватные. Спасибо!">Tatilde dizim ağrımaya başladı, otelden yürüyerek ulaşılabilir mesafede. Çok yardımcı oldular, doğru dizliği seçmeme yardım ettiler. Fiyatlar da makul. Teşekkürler!</p>
+            </div>
+            <!-- Review 3 - English -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar" style="background:#8B5CF6">JM</div>
+                    <div>
+                        <div class="review-name">James Mitchell</div>
+                        <div class="review-date" data-tr="1 ay önce" data-en="1 month ago" data-ru="1 месяц назад">1 ay önce</div>
+                    </div>
+                    <span class="review-flag">🇬🇧</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-tr="Paragliding'den sonra omzum ağrıyordu, omuz desteği ve ağrı bandı aldım. Mağaza gece geç saatte bile açıktı. Personel çok ilgili ve İngilizce iletişim kurabildik." data-en="My shoulder was hurting after paragliding. Got a shoulder support and pain relief patches. The shop was open even late at night. Staff was very attentive and we could communicate in English." data-ru="После параглайдинга болело плечо. Купил плечевой бандаж и обезболивающие пластыри. Магазин работал даже поздно ночью. Персонал очень внимательный, смогли общаться на английском.">Paragliding'den sonra omzum ağrıyordu, omuz desteği ve ağrı bandı aldım. Mağaza gece geç saatte bile açıktı. Personel çok ilgili ve İngilizce iletişim kurabildik.</p>
+            </div>
+            <!-- Review 4 - Turkish -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar" style="background:#F59E0B">FK</div>
+                    <div>
+                        <div class="review-name">Fatma Korkmaz</div>
+                        <div class="review-date" data-tr="1 hafta önce" data-en="1 week ago" data-ru="1 неделю назад">1 hafta önce</div>
+                    </div>
+                    <span class="review-flag">🇹🇷</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-tr="Annem için bel korsesi ve yürüme yardımcısı aldık. WhatsApp'tan fotoğraf gönderdik, hemen uygun ürünleri önerdi. Eve teslimat da yaptılar. Çok memnun kaldık." data-en="We bought a back brace and walking aid for my mother. Sent photos on WhatsApp and they immediately suggested the right products. Home delivery too. Very satisfied." data-ru="Купили поясничный корсет и ходунки для мамы. Отправили фото через WhatsApp — сразу подобрали нужные товары. Доставили на дом. Очень довольны.">Annem için bel korsesi ve yürüme yardımcısı aldık. WhatsApp'tan fotoğraf gönderdik, hemen uygun ürünleri önerdi. Eve teslimat da yaptılar. Çok memnun kaldık.</p>
+            </div>
+            <!-- Review 5 - Russian -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar" style="background:#10B981">ДС</div>
+                    <div>
+                        <div class="review-name">Dmitry Sokolov</div>
+                        <div class="review-date" data-tr="2 hafta önce" data-en="2 weeks ago" data-ru="2 недели назад">2 hafta önce</div>
+                    </div>
+                    <span class="review-flag">🇷🇺</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-tr="Trekking sırasında dizimi sakatladım, Kalkan'da oteldeydik. WhatsApp'tan yazdık ve aynı gün Kalkan'a kadar teslimat yaptılar. Harika bir hizmet!" data-en="Injured my knee while trekking. We were staying in Kalkan. Wrote on WhatsApp and they delivered to Kalkan the same day. Excellent service!" data-ru="Повредил колено во время треккинга. Мы жили в Калкане. Написали в WhatsApp — доставили в тот же день до Калкана. Отличный сервис!">Trekking sırasında dizimi sakatladım, Kalkan'da oteldeydik. WhatsApp'tan yazdık ve aynı gün Kalkan'a kadar teslimat yaptılar. Harika bir hizmet!</p>
+            </div>
+            <!-- Review 6 - English -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar" style="background:#EC4899">SB</div>
+                    <div>
+                        <div class="review-name">Sarah Bennett</div>
+                        <div class="review-date" data-tr="3 hafta önce" data-en="3 weeks ago" data-ru="3 недели назад">3 hafta önce</div>
+                    </div>
+                    <span class="review-flag">🇺🇸</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-tr="Dijital göçebe olarak Kaş'ta yaşıyorum. Bilgisayar başında çok oturduğum için bilek ağrısı başladı. Karpal tünel desteği aldım, çok işe yaradı. Herkese tavsiye ederim." data-en="I'm a digital nomad living in Kaş. Started getting wrist pain from too much computer work. Got a carpal tunnel brace and it helped so much. Highly recommend to everyone." data-ru="Я цифровой кочевник, живу в Каше. От долгой работы за компьютером начали болеть запястья. Купила бандаж от туннельного синдрома — очень помог. Рекомендую всем.">Dijital göçebe olarak Kaş'ta yaşıyorum. Bilgisayar başında çok oturduğum için bilek ağrısı başladı. Karpal tünel desteği aldım, çok işe yaradı. Herkese tavsiye ederim.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="delivery-banner" id="teslimat">
+    <h2 data-tr="📦 Kaş ve Çevresine Teslimat" data-en="📦 Delivery to Kaş & Surroundings" data-ru="📦 Доставка в Каш и окрестности">📦 Kaş ve Çevresine Teslimat</h2>
+    <p data-tr="Siparişinizi WhatsApp'tan verin, bulunduğunuz yere getirelim." data-en="Place your order on WhatsApp and we'll deliver to your location." data-ru="Сделайте заказ через WhatsApp — доставим к вам.">Siparişinizi WhatsApp'tan verin, bulunduğunuz yere getirelim.</p>
+    <div class="delivery-areas">
+        <span class="area-tag">📍 Kaş</span>
+        <span class="area-tag">📍 Kalkan</span>
+        <span class="area-tag">📍 Demre</span>
+        <span class="area-tag">📍 Kınık</span>
+        <span class="area-tag">📍 Finike</span>
+        <span class="area-tag">📍 Çukurbağ</span>
+    </div>
+    <a href="https://wa.me/905066452259?text=Merhaba%2C%20teslimat%20istiyorum.%20Adresim%3A%20" class="btn btn-whatsapp-light" target="_blank">
+        💬 <span data-tr="Teslimat İçin WhatsApp'tan Yaz" data-en="Message on WhatsApp for Delivery" data-ru="Написать в WhatsApp для доставки">Teslimat İçin WhatsApp'tan Yaz</span>
+    </a>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="iletisim">
+    <div class="contact-inner">
+        <div class="section-label" data-tr="İletişim" data-en="Contact" data-ru="Контакты">İletişim</div>
+        <h2 class="section-title" data-tr="Bize Ulaşın" data-en="Get in Touch" data-ru="Свяжитесь с нами">Bize Ulaşın</h2>
+        <p class="section-subtitle" data-tr="Fiziki mağazamıza gelin veya WhatsApp / telefon ile ulaşın." data-en="Visit our store or reach us via WhatsApp / phone." data-ru="Посетите наш магазин или свяжитесь через WhatsApp / телефон.">Fiziki mağazamıza gelin veya WhatsApp / telefon ile ulaşın.</p>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4 data-tr="Adres" data-en="Address" data-ru="Адрес">Adres</h4>
+                        <p>Andifli, Bilginler Sk. No:17/B<br>07580 Kaş / Antalya</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4 data-tr="Telefon" data-en="Phone" data-ru="Телефон">Telefon</h4>
+                        <a href="tel:+905066452259">0506 645 22 59</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/905066452259" target="_blank">0506 645 22 59</a>
+                        <p data-tr="Mesaj atın, hemen dönüş yapalım" data-en="Send a message, we'll reply immediately" data-ru="Напишите — ответим сразу">Mesaj atın, hemen dönüş yapalım</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div>
+                        <h4 data-tr="Çalışma Saatleri" data-en="Working Hours" data-ru="Часы работы">Çalışma Saatleri</h4>
+                        <p><strong data-tr="7/24 Açık" data-en="Open 24/7" data-ru="Открыто 24/7">7/24 Açık</strong> — <span data-tr="Her gün, her saat" data-en="Every day, every hour" data-ru="Каждый день, каждый час">Her gün, her saat</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200!2d29.6385!3d36.2005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDEyJzAyLjAiTiAyOcKwMzgnMTguNiJF!5e0!3m2!1str!2str!4v1" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Kaş Medikal Ortopedi — <span data-tr="Ortopedik Sarf Malzemeleri" data-en="Orthopedic Medical Supplies" data-ru="Ортопедические медицинские товары">Ortopedik Sarf Malzemeleri</span></p>
+    <p style="margin-top:8px">Andifli, Bilginler Sk. No:17/B, 07580 Kaş/Antalya · <a href="tel:+905066452259">0506 645 22 59</a></p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/905066452259?text=Merhaba%2C%20bilgi%20almak%20istiyorum." class="whatsapp-float" target="_blank" title="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.613l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.826-6.336-2.207l-.442-.353-3.238 1.085 1.085-3.238-.353-.442A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+// LANGUAGE SYSTEM
+const translations = {};
+let currentLang = 'tr';
+
+function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.includes(lang.toUpperCase()));
+    });
+    document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        const text = el.getAttribute('data-' + lang);
+        if (text) el.textContent = text;
+    });
+    // Update WhatsApp links based on language
+    const waMessages = {
+        tr: 'Merhaba%2C%20bilgi%20almak%20istiyorum.',
+        en: 'Hello%2C%20I%20need%20orthopedic%20medical%20supplies.',
+        ru: '%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BC%D0%BD%D0%B5%20%D0%BD%D1%83%D0%B6%D0%BD%D1%8B%20%D0%BE%D1%80%D1%82%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B.'
+    };
+    document.querySelector('.whatsapp-float').href = 'https://wa.me/905066452259?text=' + waMessages[lang];
+    document.getElementById('htmlRoot').lang = lang;
+}
+
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.getElementById('navLinks').classList.remove('active');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
